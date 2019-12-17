@@ -75,7 +75,6 @@ input[type="submit"]:hover {
     padding: 40px;
     width: 300px;
     height: 400px;
-    background-image: url(https://images.pexels.com/photos/459301/pexels-photo-459301.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
     background-size: cover;
     background-position: center;
 }

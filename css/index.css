@@ -1,123 +1,46 @@
-/* LOGIN STYLING BEGINS */
-body {
-    margin: 0;
-    padding: 0;
-    background-color: white;
-    font-size: 16px;
-    font-family: 'Schoolbell', cursive;
-    font-weight: 300;
+html,
+body,
+header,
+.view {
+  height: 100%;
 }
-
-.container {
-    position: relative;
-    margin: 5% auto;
-    height: 400px;
-    width: 600px;
-    background-color: rgb(19, 236, 252);
-    box-shadow: 0, 2px, 4px rgba(0, 0, 0, 0.6);
+@media (max-width: 740px) {
+  html,
+  body,
+  header,
+  .view {
+    height: 1000px;
+  }
 }
-
-.left {
-    position: absolute;
-    top: 0;
-    left: 0;
-    box-sizing: border-box;
-    padding: 40px;
-    width: 300px;
-    height: 400px;
+@media (min-width: 800px) and (max-width: 850px) {
+  html,
+  body,
+  header,
+  .view {
+    height: 650px;
+  }
 }
-
-h1 {
-    margin: 0 0 20px 0;
-    font-weight: 300;
-    font-size: 28px;
+.top-nav-collapse {
+  background-color: #3f51b5 !important;
 }
-
-input[type="text"] input[type="password"] {
-    display: block;
-    box-sizing: border-box;
-    margin-bottom: 20px;
-    padding: 4px;
-    width: 220px;
-    height: 32px;
-    border: none;
-    outline: none;
-    border-bottom: 1px solid black;
-    font-family: 'Schoolbell';
-    font-weight: 400;
-    font-size: 15px;
-    transition: 0.2s ease;
+.navbar:not(.top-nav-collapse) {
+  background: transparent !important;
 }
-
-input[type="submit"] {
-    margin-bottom: 28px;
-    width: 120px;
-    height: 32px;
-    background: white;
-    border: none;
-    border-radius: 2px;
-    font-family: 'Schoolbell';
-    font-weight: 500;
-    text-transform: uppercase;
-    transition: 0.2s ease;
-    cursor: pointer;
+@media (max-width: 991px) {
+  .navbar:not(.top-nav-collapse) {
+    background: #3f51b5 !important;
+  }
 }
-
-input[type="submit"]:hover {
-    background-color: orchid;
+.rgba-gradient {
+  background: -webkit-linear-gradient(45deg, rgba(0, 0, 0, 0.7), rgba(72, 15, 144, 0.4) 100%);
+  background: linear-gradient(to 45deg, rgba(0, 0, 0, 0.7), rgba(72, 15, 144, 0.4) 100%);
 }
-
-.right {
-    position: absolute;
-    top: 0;
-    right: 0;
-    box-sizing: border-box;
-    padding: 40px;
-    width: 300px;
-    height: 400px;
-    background-size: cover;
-    background-position: center;
+.card {
+  background-color: rgba(126, 123, 215, 0.2);
 }
-
-.or {
-    position: absolute;
-    top: 180px;
-    left: 280px;
-    width: 40px;
-    height: 40px;
-    background-color: white;
-    border-radius: 50%;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
-    line-height: 40px;
-    text-align: center;
+.md-form label {
+  color: #ffffff;
 }
-
-.right .signin {
-    display: block;
-    margin-bottom: 40px;
-    font-size: 28px;
-    color: #fff;
-    text-align: center;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
-}
-
-button.social {
-    margin-bottom: 20px;
-    width: 220px;
-    height: 36px;
-    border: none;
-    border-radius: 2px;
-    color: black;
-    font-weight: 500;
-    transition: 0.2s ease;
-    cursor: pointer;
-}
-.fb{
-    background: rgb(11, 116, 214);
-}
-.twt{
-    background: rgb(93, 178, 247);
-}
-.gg{
-    background: rgb(212, 28, 28);
+h6 {
+  line-height: 1.7;
 }
